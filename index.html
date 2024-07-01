@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery express</title>
+    <link rel="stylesheet" href="teste2.css">
+    <!-- Importation de boxicons pour les icônes -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Importation de Font Awesome pour plus d'icônes (optionnel) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Delivery express</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="teste2.html" class="active">Accueil</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="cart-icon"><i class='bx bx-cart'></i> Panier</a></li>
+            <li><a href="profil.html"><i class="fa-regular fa-user"></i></a></li>
+            <li>
+                <div class="search-container">
+                    <input type="text" class="search-bar" id="search-bar" placeholder="Rechercher...">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Bienvenue dans notre boutique en ligne</h2>
+        <p>Découvrez nos derniers produits</p>
+    </section>
+
+    <section class="product-section">
+        <h2 class="section-title">Nos Produits</h2>
+        <div class="filters">
+            <button class="filter-btn" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="pc">Pc portable</button>
+            <button class="filter-btn" data-category="accessoires">Accessoires</button>
+            <button class="filter-btn" data-category="Gaming">Gaming</button>
+            <button class="filter-btn" data-category="mobile">Mobile</button>
+        </div>
+        <div class="product-grid">
+            <!-- Les produits seront générés dynamiquement ici -->
+            <div class="produits">
+                <!-- Example Product Card -->
+                <!-- Add more product cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <div class="cart">
+        <h2>Votre Panier</h2>
+        <div class="cart-content">
+            <!-- Les articles du panier seront ajoutés ici -->
+        </div>
+        <div class="total">
+            Total: <span class="total-price">0€</span>
+        </div>
+        <button class="btn-buy" id="btn-buy">Acheter</button>
+        <button id="cart-close">Fermer</button>
+        <button id="whatsapp-btn">Envoyer par WhatsApp</button>
+        
+    </div>
+
+    <section class="carousel-section">
+        <h2 class="produits_tx">Les bons prix</h2>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <!-- Carousel items -->
+                    <div class="product-grid">
+                        <!-- Les produits seront générés dynamiquement ici -->
+                        <div class="produits">
+                            <!-- Add more carousel items as needed -->
+                        </div>
+                    </div>
+                </div>
+                <button id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delivery express. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Fenêtre modale -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" id="modal-img">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="add-to-cart-btn">Ajouter au panier</button>
+        </div>
+    </div>
+
+    
+    <script src="teste2.js"></script>
+</body>
+</html>
